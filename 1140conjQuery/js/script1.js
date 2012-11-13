@@ -5,83 +5,58 @@
             duration: "slow"
         },
         collapsible:true
-
-
     });
-    $("#acordeon").accordion().accordion({event:"mouseover"});
-
+    $("#acordeon").accordion().accordion({ event: "mouseover" });
     $("#miDialogo").dialog({ autoOpen: false });
-
     $("#rojo, #verde, #azul").slider({
         min: 0,
         max: 255,
         step: 1,
-             
         slide: cambiaMarcador
-
     });
-
     $("#fecha").datepicker({
-        minDate: new Date(),
-        maxDate: +40,
-        changeMonth: true
-
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "-25:+25",
+        showButtonPanel: true,
+        numberOfMonths: 1,
+        dateFormat: "D mm yy",
+        closeText: "cerrar",
+        currentText: "HOY",
+        dayNames: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+        dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+        dayNamesShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+        firstDay: 1,
+        //monthNames : ["Enero","Febrero"...
+        //monthNamesShort: ["Ene","Feb"...
+        nextText: "Siguiente",
+        prevText: "Anterior",
+   
 
     });
-
-    $("#autocompletador").autocomplete({
-        source:
-        ["c++",
-        "java",
-        "php",
-        "coldfusion",
-        "javascript",
-        "asp",
-        "ruby"]
+    $("#autocompleta").autocomplete({
+        source:["c++","java","php","coldfusion","javascript","asp","ruby"]
     });
-
-    var listaPalabras=["c++",
-        "java",
-        "php",
-        "coldfusion",
-        "javascript",
-        "asp",
-        "ruby"]
-    
-
-$("#autocompletador2").autocomplete({
-
+    var listaPalabras=["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby"];
+    $("#autocompleta2").autocomplete({
         source: function (peticion, respuesta) {
-            var coincide = new RegExp("^" + $.ui.autocomplete.escape.Regex(peticion.term), "i");
-            respuesta($.grep(listaPalabras, function(item){
+            var coincide = new RegExp("^" + $.ui.autocomplete.escapeRegex(peticion.term), "i");
+            respuesta($.grep(listaPalabras, function (item) {
                 return coincide.test(item);
             }));
-        }        
-});
+        }
+    });
 
-$("#radio").buttonset();
-$("#Button5").button();
-$("#Checkbox1").button({
-    icons: {
-        primary: "ui-icon-gear",
-        secondary:"ui-icon-triangle-1-s"
-
-    }
-
+    $("#radio").buttonset();
+  
+    $("#progreso").progressbar({
+        value: 66
+    });
 
 });
-
-
-});
-
-
 
 function cambiaMarcador() {
     jQuery(function () {
-        $("#deslizador").text(
-            $("#miDeslizador").slider("value")
-            );
-
         var rojo = $("#rojo").slider("value");
         var azul = $("#azul").slider("value");
         var verde = $("#verde").slider("value");
@@ -90,41 +65,43 @@ function cambiaMarcador() {
             backgroundColor: cadenaRGB
         });
         $("#deslizador").text(cadenaRGB);
+        $("#progreso").progressbar({
+            value: rojo
+        });
     });
-}
 
+}
 function muestraDialogo() {
     jQuery(function () {
         $("#miDialogo").dialog({
-            
-
-            buttons:{
-                Ok: function () { $(this).dialog({
-                    autoOpen:true, 
-                    
-                },
-                
-
+            autoOpen: true,
+            buttons: {
+                Ok:function () {$(this).dialog("close");}
+            },
+            dialogClass:"alert"
         });
     });
+
 }
 
 function deshabilita(numeroTab) {
     jQuery(function () {
-        $("#ejemploTabs").tabs({disabled:[numeroTab]});
+        $("#ejemploTabs").tabs({
+            disabled: [numeroTab,numeroTab+1]
+        });
     });
-    
+
+
 }
 
-function sumaUnTabMas(){
+function ponUnTabMas() {
     jQuery(function () {
         $("#ejemploTabs").tabs("add","","un nuevo Tab");
     });
 }
 
-
-function quitaUnTab() {
+function quitaUnTabMas() {
     jQuery(function () {
-        $("#ejemploTabs").tabs("remove", "", "un nuevo Tab");
+        $("#ejemploTabs").tabs("remove",1);
     });
 }

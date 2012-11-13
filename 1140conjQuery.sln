@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1140conjQuery", "1140conjQuery\1140conjQuery.csproj", "{EF85DBF4-C51F-49D4-B418-40FDA691E313}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1140conjQuery", "1140conjQuery\1140conjQuery.csproj", "{E009B8D4-A4F5-4C38-BF34-0CDA40C9043E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF85DBF4-C51F-49D4-B418-40FDA691E313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF85DBF4-C51F-49D4-B418-40FDA691E313}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF85DBF4-C51F-49D4-B418-40FDA691E313}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF85DBF4-C51F-49D4-B418-40FDA691E313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E009B8D4-A4F5-4C38-BF34-0CDA40C9043E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E009B8D4-A4F5-4C38-BF34-0CDA40C9043E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E009B8D4-A4F5-4C38-BF34-0CDA40C9043E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E009B8D4-A4F5-4C38-BF34-0CDA40C9043E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

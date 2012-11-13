@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EF85DBF4-C51F-49D4-B418-40FDA691E313}</ProjectGuid>
+    <ProjectGuid>{E009B8D4-A4F5-4C38-BF34-0CDA40C9043E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -57,24 +57,24 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\1140.css" />
-    <Content Include="css\vader\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="css\vader\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="css\vader\images\ui-bg_gloss-wave_16_121212_500x100.png" />
-    <Content Include="css\vader\images\ui-bg_highlight-hard_15_888888_1x100.png" />
-    <Content Include="css\vader\images\ui-bg_highlight-hard_55_555555_1x100.png" />
-    <Content Include="css\vader\images\ui-bg_highlight-soft_35_adadad_1x100.png" />
-    <Content Include="css\vader\images\ui-bg_highlight-soft_60_dddddd_1x100.png" />
-    <Content Include="css\vader\images\ui-bg_inset-soft_15_121212_1x100.png" />
-    <Content Include="css\vader\images\ui-icons_666666_256x240.png" />
-    <Content Include="css\vader\images\ui-icons_aaaaaa_256x240.png" />
-    <Content Include="css\vader\images\ui-icons_bbbbbb_256x240.png" />
-    <Content Include="css\vader\images\ui-icons_c98000_256x240.png" />
-    <Content Include="css\vader\images\ui-icons_cccccc_256x240.png" />
-    <Content Include="css\vader\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="css\vader\images\ui-icons_f29a00_256x240.png" />
-    <Content Include="css\vader\jquery-ui-1.9.1.custom.css" />
-    <Content Include="css\vader\jquery-ui-1.9.1.custom.min.css" />
+    <Content Include="CSS\1140.css" />
+    <Content Include="CSS\vader\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="CSS\vader\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="CSS\vader\images\ui-bg_gloss-wave_16_121212_500x100.png" />
+    <Content Include="CSS\vader\images\ui-bg_highlight-hard_15_888888_1x100.png" />
+    <Content Include="CSS\vader\images\ui-bg_highlight-hard_55_555555_1x100.png" />
+    <Content Include="CSS\vader\images\ui-bg_highlight-soft_35_adadad_1x100.png" />
+    <Content Include="CSS\vader\images\ui-bg_highlight-soft_60_dddddd_1x100.png" />
+    <Content Include="CSS\vader\images\ui-bg_inset-soft_15_121212_1x100.png" />
+    <Content Include="CSS\vader\images\ui-icons_666666_256x240.png" />
+    <Content Include="CSS\vader\images\ui-icons_aaaaaa_256x240.png" />
+    <Content Include="CSS\vader\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="CSS\vader\images\ui-icons_c98000_256x240.png" />
+    <Content Include="CSS\vader\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="CSS\vader\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="CSS\vader\images\ui-icons_f29a00_256x240.png" />
+    <Content Include="CSS\vader\jquery-ui-1.9.1.custom.css" />
+    <Content Include="CSS\vader\jquery-ui-1.9.1.custom.min.css" />
     <Content Include="js\jquery-1.8.2.js" />
     <Content Include="js\jquery-ui-1.9.1.custom.js" />
     <Content Include="js\jquery-ui-1.9.1.custom.min.js" />
@@ -108,7 +108,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52609/</IISUrl>
+          <IISUrl>http://localhost:52617/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
